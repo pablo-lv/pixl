@@ -16,10 +16,10 @@ type PxCanvasConfig struct {
 }
 
 type State struct {
-	BrushColor   color.Color
-	BrushType    int
-	SwatchSelect int
-	FilePath     string
+	BrushColor     color.Color
+	BrushType      int
+	SwatchSelected int
+	FilePath       string
 }
 
 func (state *State) SetFilePath(path string) {
