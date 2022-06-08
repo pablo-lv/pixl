@@ -68,7 +68,7 @@ func NewPxCanvas(state *apptype.State, config apptype.PxCanvasConfig) *PxCanvas 
 	return pxCanvas
 }
 
-func (pxCanvas *PxCanvas) createRenderer() fyne.WidgetRenderer {
+func (pxCanvas *PxCanvas) CreateRenderer() fyne.WidgetRenderer {
 	canvasImage := canvas.NewImageFromImage(pxCanvas.PixelData)
 	canvasImage.ScaleMode = canvas.ImageScalePixels
 	canvasImage.FillMode = canvas.ImageFillContain
